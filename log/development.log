@@ -136,3 +136,59 @@ Processing by HogsController#index as */*
 Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.7ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-05-14 15:58:26 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/thuyan.duong/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/thuyan.duong/.rvm/gems/ruby-2.3.3/gems/railties-5.2.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/thuyan.duong/.rvm/gems/ruby-2.3.3/gems/railties-5.2.2/lib/rails/templates/rails/welcome/index.html.erb (4.7ms)
+Completed 200 OK in 21ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/hogs" for 127.0.0.1 at 2019-05-14 15:58:30 -0400
+Processing by HogsController#index as HTML
+  [1m[36mHog Load (0.3ms)[0m  [1m[34mSELECT "hogs".* FROM "hogs"[0m
+  ↳ app/controllers/hogs_controller.rb:3
+Completed 200 OK in 17ms (Views: 2.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/hogs" for 127.0.0.1 at 2019-05-14 16:03:11 -0400
+Processing by HogsController#index as */*
+  [1m[36mHog Load (0.6ms)[0m  [1m[34mSELECT "hogs".* FROM "hogs"[0m
+  ↳ app/controllers/hogs_controller.rb:3
+Completed 200 OK in 9ms (Views: 3.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/hogs" for 127.0.0.1 at 2019-05-14 16:43:24 -0400
+Processing by HogsController#index as HTML
+  [1m[36mHog Load (0.2ms)[0m  [1m[34mSELECT "hogs".* FROM "hogs"[0m
+  ↳ app/controllers/hogs_controller.rb:3
+Completed 200 OK in 9ms (Views: 4.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/hogs" for 127.0.0.1 at 2019-05-14 16:59:26 -0400
+Processing by HogsController#index as HTML
+  [1m[36mHog Load (0.2ms)[0m  [1m[34mSELECT "hogs".* FROM "hogs"[0m
+  ↳ app/controllers/hogs_controller.rb:3
+Completed 200 OK in 9ms (Views: 3.7ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/hogs" for 127.0.0.1 at 2019-05-14 16:59:39 -0400
+Processing by HogsController#create as */*
+  Parameters: {"name"=>"Trevor", "hog"=>{"name"=>"Trevor"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/hogs_controller.rb:7
+  [1m[36mHog Create (32.8ms)[0m  [1m[32mINSERT INTO "hogs" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Trevor"], ["created_at", "2019-05-14 20:59:39.291694"], ["updated_at", "2019-05-14 20:59:39.291694"]]
+  ↳ app/controllers/hogs_controller.rb:7
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/hogs_controller.rb:7
+Completed 200 OK in 47ms (Views: 1.5ms | ActiveRecord: 38.5ms)
+
+
+Started GET "/hogs" for 127.0.0.1 at 2019-05-14 16:59:43 -0400
+Processing by HogsController#index as HTML
+  [1m[36mHog Load (0.4ms)[0m  [1m[34mSELECT "hogs".* FROM "hogs"[0m
+  ↳ app/controllers/hogs_controller.rb:3
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 0.4ms)
+
+
